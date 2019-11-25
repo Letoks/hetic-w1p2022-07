@@ -6,4 +6,4 @@ Nathan Binet /
 Eunji Lee /
 Nicolas Jesenberger /
 Anthony Roux /
-Adrien Poitevin /
+Adrien Poitevin 
