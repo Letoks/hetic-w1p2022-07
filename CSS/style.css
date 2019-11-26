@@ -25,6 +25,7 @@ body {
 }
 
 
+
 /* represente chaque mini ligne du menu burger */
 .miniDivBurger { 
   margin: 5px;
@@ -68,6 +69,12 @@ body {
   transform: none;
 }
 
+/* .isXburger {
+  transition: transform 500ms ease 0s;
+  transform: translate3d(200px, 0, 0);
+
+  
+} */
 
 /* titre "menu" du menu burger */
 .titreMenuHidden {
@@ -96,8 +103,8 @@ li {
 }
 
 
-.sectionPresentation {
-
+.articlePresentation {
+  margin: 10%;
 }
 
 /* classe temporaire qui simule la future taille de la photo du mangsidig */
@@ -111,8 +118,26 @@ li {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 
 }
+/* nom prix et description de la section présentation */
+.nameProduct {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 70px 20px 0;
 
+}
 
+.priceProduct {
+  font-weight: 500;
+  text-align: right;
+}
+
+.descriptionProduct {
+  margin: 20px 0;
+  text-align: justify;
+  font-weight: 300;
+}
 
 /* FOOTER  */
 
