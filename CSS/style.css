@@ -35,8 +35,17 @@ body {
   margin: 5px auto;
 }
 
+.iconCaddy {
+  margin: 25px 25px;
+  width: 25px;
+}
+
+/* .blocIcons {
+margin: 0 15px;
+} */
+
 .iconsNav {
-  margin: 25px 5px;
+  margin: 25px 10px;
   width: 15px;
 }
 
