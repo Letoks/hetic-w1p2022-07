@@ -7,3 +7,4 @@ menu.addEventListener('click', function() {
     hiddenMenu.classList.toggle('isOpen')
 });
 
+
