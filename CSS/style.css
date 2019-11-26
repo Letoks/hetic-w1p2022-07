@@ -5,7 +5,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* le header entier */
 .navBar {
   display: flex;
@@ -24,10 +23,8 @@ body {
   cursor: pointer;
 }
 
-
-
 /* represente chaque mini ligne du menu burger */
-.miniDivBurger { 
+.miniDivBurger {
   margin: 5px;
   width: 25px;
   height: 3px;
@@ -69,12 +66,6 @@ body {
   transform: none;
 }
 
-/* .isXburger {
-  transition: transform 500ms ease 0s;
-  transform: translate3d(200px, 0, 0);
-
-  
-} */
 
 /* titre "menu" du menu burger */
 .titreMenuHidden {
@@ -102,7 +93,6 @@ li {
   border-bottom: 1px black;
 }
 
-
 .articlePresentation {
   margin: 10%;
 }
@@ -112,11 +102,11 @@ li {
   display: flex;
   justify-content: center;
   margin: 10% auto;
+  margin-top: 100px;
   width: 250px;
   height: 450px;
   background-color: #0058a3;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-
 }
 /* nom prix et description de la section présentation */
 .nameProduct {
@@ -125,7 +115,6 @@ li {
   font-size: 20px;
   text-align: left;
   margin: 20px 70px 20px 0;
-
 }
 
 .priceProduct {
@@ -134,9 +123,46 @@ li {
 }
 
 .descriptionProduct {
-  margin: 20px 0;
+  margin: 20px 0 100px 0;
   text-align: justify;
   font-weight: 300;
+}
+
+/* ZONE DE CUSTOMISATION  */
+
+.sectionCustomisation {
+  background-color: #0058a3;
+  padding: 15% 10%;
+}
+
+.articleCustomisation {
+  width: 250px;
+  height: 450px;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* DESCRIPTION SUR LE SYSTÈME DE LEVITATION UTILISÉ */
+
+.sectionSystemeLevitation {
+  padding: 15% 10%;
+}
+
+.articleSystemeLevitation1 {
+  width: 250px;
+  height: 300px;
+  background-color: #0058a3;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.articleSystemeLevitation2 {
+  width: 250px;
+  height: 300px;
+  background-color: #0058a3;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* FOOTER  */
@@ -151,14 +177,15 @@ footer {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-
 /* classe qui cible chaque logo de reseaux svg */
 .reseauxIcons {
   width: 10px;
+  margin: 20px;
+  margin: 0 auto;
 }
 
 /* la div comprenant l'ensemble des logos de reseaux svg */
 .reseauxSociaux {
-  width: 50px;
-  height: 100px;
+  /* width: 50px;
+  height: 100px; */
 }
