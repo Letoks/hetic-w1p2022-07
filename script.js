@@ -1,8 +1,9 @@
 // Menu Burger //
 
-menu = document.querySelector('.hiddenMenu');
+menu = document.querySelector('.menuBurger');
+hiddenMenu = document.querySelector('.hiddenMenu');
 
 menu.addEventListener('click', function() {
-    menu.classList.toggle('visible')
+    hiddenMenu.classList.toggle('isOpen')
 });
 
