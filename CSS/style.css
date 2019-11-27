@@ -61,7 +61,6 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 10px;
-
   background-color: #ffce00;
   transition: transform 0.3s ease-in-out;
 }
@@ -142,7 +141,7 @@ li {
   color: white;
   outline: none;
   border: none;
-  background-color: #0057a3d2;
+  background-color: transparent;
 }
 
 .effetLi:focus {
@@ -206,6 +205,7 @@ li {
 /*-----------------------------------*/
 .sectionPresentation {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: white;
 }
 
 .articlePresentation {
@@ -218,12 +218,21 @@ li {
   justify-content: center;
   margin: 10% auto 0;
   margin-top: 20px;
-  width: 250px;
-  height: 450px;
-  background-color: #0058a3;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 300px;
+  max-width: 300px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
+
+.figmaProjet {
+  width: 100%;
+  height: 90%;
+  margin: 10% 0 auto;
+}
+
 /* NAME PRICE AND DESCRIPTION SECTION PRESENTATION */
 .nameProduct {
   text-transform: uppercase;
@@ -231,17 +240,6 @@ li {
   font-size: 25px;
   margin: 30px 0 10px 0;
   text-align: center;
-}
-
-.priceProduct {
-  font-weight: 500;
-  text-align: right;
-}
-
-.descriptionProduct {
-  padding: 20px 0 0 0;
-  text-align: justify;
-  font-weight: 300;
 }
 
 /* ZONE DE CUSTOMISATION  */
@@ -252,19 +250,134 @@ li {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+.sellNow {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
+  margin: 30px 0 10px 0;
+  text-align: center;
+}
+
 .articleCustomisation {
   display: flex;
   justify-content: center;
   margin: 10% auto;
   margin-top: 30px;
-  width: 250px;
+  width: 100%;
+  max-width: 300px;
   height: 450px;
   background-color: white;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
+
+.descriptionArea .nameProduct {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 50px 0 10px 0;
+  text-align: left;
+  color: white;
+  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
+}
+.priceProduct {
+  font-weight: 500;
+  text-align: right;
+  color: white;
+  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
+}
+
+.priceProduct strong {
+  color: #ffce00;
+  font-weight: 900;
+}
+
+.formulary h1 {
+  font-weight: 700;
+  margin: 10px 0 20px 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+.styleh1 {
+  font-weight: 700;
+  margin: 30px 0 0 0;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.descriptionProduct {
+  padding: 10px 0 0 0;
+  margin-bottom: 40px;
+  text-align: justify;
+  font-weight: 300;
+  color: white;
+  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
+  line-height: 20px;
+  
+}
+
+/* FORMULAIRE */
+
+.formulary form {
+  background-color: white;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+select {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+  margin: 5px;
+  outline: none;
+
+}
+
+
+.formulary label {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 30px ;
+
+
+}
+
+.formulary span {
+  border: 1px black;
+}
+.btn-validation {
+  display: flex;
+  min-width: 25px;
+  font-size: 18px;
+  margin: 3% 33%;
+  box-shadow: -1px 148px 400px -62px rgba(255, 255, 255, 0.993) inset;
+  cursor: pointer;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+
+}
+
+ .btn-validation:hover {
+  color: #0058a3;
+}
+
+
+
+
+/*-----------------------------------*/
+
 
 /* DESCRIPTION SUR LE SYSTÈME DE LEVITATION UTILISÉ */
 
