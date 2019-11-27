@@ -5,47 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="CSS/reset.css" rel="stylesheet" />
-    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/product.css" rel="stylesheet" />
     <style>
       @import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,300,400,500,700,900|Noto+Sans+JP:100,300,400,500,700,900&display=swap");
     </style>
     <script defer type="text/javascript" src="script.js"></script>
 
-    <title>Page produit</title>
+    <title>Livraison & Paiement</title>
   </head>
 
   <body>
+
     <main>
       <section>
         <nav class="navBar">
           <div id="Menu" class="hiddenMenu">
             <ul>
+              <li class="titreMenuHidden">Menu</li>
+              <hr>
               <li>A propos</li>
               <li>Produits</li>
               <li>Contact</li>
             </ul>
           </div>
 
-          <div class="menuBurger">
+          <div class="menuBurger" class="isXburger">
             <div class="miniDivBurger"></div>
             <div class="miniDivBurger"></div>
             <div class="miniDivBurger"></div>
-          </div>
-          <a href=""
-            ><img class="logoIkea" src="IMG/Ikea_logo 2.svg" alt="Logo IKEA"
-          /></a>
-          <div class="blocIcons">
-            <a href=""
-              ><img
-                class="iconCaddy"
-                class="iconsNav"
-                src="IMG/Group.svg"
-                alt="Panier"
-            /></a>
+          </div class="blocIcons">
+
+          <a href="">
+            <img class="logoIkea" src="IMG/Ikea_logo 2.svg" alt="Logo IKEA"/>
+          </a>
+
+          <div>
+            <a href="">
+              <img class="iconCaddy" src="IMG/Group.svg" alt="Panier"/>
+            </a>
           </div>
         </nav>
       </section>
     </main>
+
+    <br>
+    <h1>Finalisation de l'achat</h1>
+    <br>
+    <hr>
+    <br>
+
+    <div class="form">
+      <form>  
+          <div><label id="name" class="name" for="name">Nom</label></div>
+          <div><input type="text" id="name" name="name" placeholder="Roux" minlength="2" maxlength="256" required/></div>
+
+          <div><label id="surname" class="surname" for="surname">Prénom</label></div>
+          <div><input type="text" id="surname" name="surname" placeholder="Anthony" maxlength="256" required/></div>
+          
+          <div><label id="country" class="country" for="country">Pays</label></div>
+          <div>
+            <select id="country" name="country">
+              <option value="FR">France</option>
+              <option value="FR">France</option>
+            </select>
+          </div>
+          <div><label id="address" class="address" for="address">Adresse</label></div>
+          <div><input type="text" id="address" name="address" placeholder="17 rue de la Demi-Lune" minlength="1" maxlength="256" required/></div>
+
+          <div><label id="city" class="city" for="city">Ville</label></div>
+          <div><input type="text" id="city" name="city" placeholder="Montreuil" minlength="1" maxlength="256" required"/></div>
+
+          <div><label id="zip" class="zip" for="zip">Code postal</label></div>
+          <div><input type="text" id="zip" name="zip" placeholder="93150" pattern="[0-9]{5}" required"/></div>
+          <div><input type="submit" value="Confirmer et payer"/></div>
+
+      </form>
+    </div>
+
   </body>
-  <footer></footer>
+
+
+  <footer>
+  
+      <span class="reseauxSociaux">
+        <a href=""
+            ><img class="reseauxIcons" src="IMG/twitter.svg" alt="twitter"
+          /></a>
+        <a href=""
+            ><img class="reseauxIcons" src="IMG/insta.svg" alt="insta"
+          /></a>
+        <a href=""
+          ><img class="reseauxIcons" src="IMG/pinterest.svg" alt="pinterest"
+        /></a>
+        <a href=""
+          ><img class="reseauxIcons" src="IMG/github.svg" alt="github"
+        /></a>
+        <a href=""
+          ><img class="reseauxIcons" src="IMG/facebook.svg" alt="facebook"
+        /></a>
+      </span>
+  
+  </footer>
 </html>
