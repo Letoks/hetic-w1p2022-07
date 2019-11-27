@@ -22,9 +22,19 @@
             <ul>
               <li class="titreMenuHidden">Menu</li>
               <hr>
-              <li><button class="effetLi">A propos</button></li>
-              <li><button class="effetLi">Produit</button></li>
-              <li><button class="effetLi">Contact</button></li>
+              <a href="#customisation-area" class="selection">
+                <li>
+                  <button class="effetLi produit">Produit</button>
+                </li>
+              </a>
+              <a href="#article-area">
+                <li>
+                  <button class="effetLi propos">À propos</button>
+                </li>
+              </a>
+              <li>
+                <button class="effetLi">Contact</button>
+              </li>
             </ul>
           </div>
 
@@ -57,15 +67,13 @@
 
       <!-- zone de customisation -->
       <section class="sectionCustomisation" >
-          <h1 class="sellNow">Achetez-le maintenant !</h1>
-
-        <article class="articleCustomisation">
-
+        <h1 class="sellNow">Achetez-le maintenant !</h1>
+        <article class="articleCustomisation" id="customisation-area">
         </article>
         <article class="descriptionArea"> 
           <h1 class="nameProduct">Mångsidig</h1><span class="priceProduct"><p>à partir de <strong>999,99€</strong></p></span>
           <h1 class="styleh1">Qu'est-ce que c'est ? </h1>
-          <p class="descriptionProduct">Etagère modulable à lévitation conçu pour l’intérieur, sur lequel on peut ajouter ou stocker à sa guise rangements, décorations en tout genre et utilitaires comme une lumière en fonction des besoins de l’utilisateur. Les modules sont interchangeable a la guise de l’utilisateur tant qu’il utilise les modules IKEA spécialement conçus pour ce meuble.</p>
+          <p class="descriptionProduct">C'est une étagère modulable à lévitation conçu pour l’intérieur, sur lequel on peut ajouter ou stocker à sa guise rangements, décorations en tout genre et utilitaires comme une lumière en fonction des besoins de l’utilisateur. Les modules sont interchangeable tant qu’il utilise les modules IKEA spécialement conçus pour ce meuble.</p>
         <article class="formulary">
             
             <form>
@@ -112,33 +120,61 @@
       </section>
 
     <!-- DESCRIPTION SUR LE SYSTÈME DE LEVITATION UTILISÉ -->
-    <div class="sectionSystemeLevitation">
-      
-      <article class="articleSystemeLevitation1"></article>
-      <h1 class="titreArticle">PLACEHOLDER</h1>
-      <br>
-      <p> <h3 class="soustitreArticle"> SOUS-TITRE </h3>  Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <div class="sectionSystemeLevitation" id="article-area">
+        <h1 class="titreSectionArticle">quelques articles à ne pas manquer...</h1><span class="priceProduct"><p>
+      <article class="articleSystemeLevitation1">
+        <div class="article1">
+            Nous avons toujours respecté un style de produits faciles à monter, dans un esprit design, le plus épuré possible.</br>
+            L’accessibilité de nos clients au bricolage est un point primordial de notre politique, puisque notre commerce repose dessus.<br>
+            Mais même si nos articles sont, comme dit plus haut, des articles aussi beaux que bien conçus ou pratique, nos équipes chargées de la conception de nos meubles se sont décidées à créer une nouvelle gamme de produits simples.</br>
+            Quatre aimants supraconducteurs, quelques planches de bois et c’est fait, nous vous dévoilons aujourd’hui la plus simpliste et la plus technologique de nos gammes:  
+        </div>
+      </article>
+      <h1 class="titreArticle">du classique à l'innovant</h1>
+      <!-- <div>
+        <h3 class="soustitreArticle"> SOUS-TITRE </h3>
+        <p class="paragrapheArticle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
       <div class="bouton1">
         <button class="buttonArticle">Lire</button>
-      </div>
+      </div> -->
 
       <hr>
       
-      <article class="articleSystemeLevitation2"></article>
-      <h1 class="titreArticle">PLACEHOLDER</h1>
-      <p> <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <article class="articleSystemeLevitation2">
+      <div class="article2">L’article a l’origine de cette gamme est plein de créativité et d’options. Choisissez entre deux bases, qui seront modulables à l’infini par la suite.</br> 
+          C’est notre premier meuble qui peut changer seul de forme puisqu’il est suspendu dans un champ magnétique, oui vous l’avez bien lu.</br>  
+          Le Mångsidig est doté d’un socle sur lequel deux aimants surpuissants sont installés, permettant la lévitation des modules installés à l’intérieur.</br>  
+          Grâce au champ de force créé, les étagères permettent la recharge des appareils acceptant la recharge à induction.</br> 
+          </div>
+      </article>
+      <h1 class="titreArticle">la science s'invite chez vous</h1>
+      <!-- <div>
+          <h3 class="soustitreArticle"> SOUS-TITRE </h3>
+          <p class="paragrapheArticle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
       <div class="bouton2"> <button class="buttonArticle">Lire</button>
-      </div>
+      </div> -->
 
       <hr >
       
-      <article class="articleSystemeLevitation3"></article>
-      <h1 class="titreArticle">PLACEHOLDER</h1>
-      <p> <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <article class="articleSystemeLevitation3">
+        <div class="article3">« J’ai déjà un meuble de rangement ‘fourre-tout’, pourquoi j’achèterai quelque chose qui les fait voler ? »</br> 
+            Oui, tout le monde a un meuble de rangement, et nous comprenons totalement que vous puissiez ne pas être intéressé par cette invention presque qualifiable de fabuleuse.</br>  
+            Mais si vous êtes sur ce site, c’est pour un changement, une nouvelle expérience dans le domaine du design et du pratique, un renouveau dans votre vie privée.</br>  
+            Un renouveau qui ne sera pas dans l’appartement ou la maison de votre ami mais dans le votre parce que vous n’aurez pas hésité. 
+            Au-delà de ceci, votre meuble en avance sur son temps sera une parfaite touche de futur dans votre présent.</br> 
+            </div>
+      </article>
+      <h1 class="titreArticle">stop le bavardage, on s'active au bricolage</h1>
+      <!-- <div>
+          <h3 class="soustitreArticle"> SOUS-TITRE </h3>
+          <p class="paragrapheArticle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
       <div class="bouton3">
         <button class="buttonArticle">Lire</button>
-      </div>
-
+      </div> -->
+      <hr>
     </div>
 
   </main>
