@@ -14,6 +14,9 @@ body {
     height: 4px;
     cursor: pointer;
   }
+
+ 
+
 }
 
 /* COMPUTER */
@@ -22,6 +25,7 @@ body {
   .menuBurger {
     visibility: hidden;
   }
+
 }
 
 /* HEADER */
@@ -87,16 +91,11 @@ body {
 .hiddenMenu {
   display: flex;
   position: fixed;
-  background-color: #0057a3d2;
-  width: 94%;
-  height: 84vh;
+  background-color: #0058A3;
+  width: 100%;
+  height: 100%;
   /* padding: 15px; */
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  margin-top: 80px;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-bottom: 3%;
+  margin-top: 60px;
   justify-content: center;
   transition: transform 0.5s;
   transform: translateX(-1500px);
@@ -387,6 +386,13 @@ select {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
+.bouton1, .bouton2, .bouton3{
+  display: flex;
+  justify-content: center;
+}
+
+
+
 .articleSystemeLevitation1 {
   background-color: #0058a3;
   display: flex;
@@ -394,9 +400,7 @@ select {
   margin: 10% auto;
   margin-top: 30px;
   width: 250px;
-  height: 450px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  height: 200px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
@@ -408,11 +412,35 @@ select {
   margin: 10% auto;
   margin-top: 30px;
   width: 250px;
-  height: 450px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  height: 200px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+}
+
+.articleSystemeLevitation3 {
+  background-color: #0058a3;
+  display: flex;
+  justify-content: center;
+  margin: 10% auto;
+  margin-top: 30px;
+  width: 250px;
+  height: 200px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.titreArticle {
+  font-size: 20px ;
+}
+
+
+
+.buttonArticle {
+  height: 20px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+
 }
 
 /* FOOTER  */
