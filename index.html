@@ -1,140 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="CSS/reset.css" rel="stylesheet" />
-    <link href="CSS/style.css" rel="stylesheet" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,300,400,500,700,900|Noto+Sans+JP:100,300,400,500,700,900&display=swap");
-    </style>
-    <script defer type="text/javascript" src="script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="CSS/reset.css" rel="stylesheet" />
+  <link href="CSS/style.css" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,300,400,500,700,900|Noto+Sans+JP:100,300,400,500,700,900&display=swap");
+  </style>
+  <script defer type="text/javascript" src="script.js"></script>
 
-    <title>Home page</title>
-  </head>
-  <body>
-    <main>
-      <header>
-        <nav class="navBar">
-          <div id="Menu" class="hiddenMenu">
-            <ul>
-              <li class="titreMenuHidden">Menu</li>
-              <hr>
-              <li><button class="effetLi">A propos</button></li>
-              <li><button class="effetLi">Produit</button></li>
-              <li><button class="effetLi">Contact</button></li>
-            </ul>
-          </div>
+  <title>Home page</title>
+</head>
 
-          <div class="menuBurger">
-            <span></span>
-          </div class="blocIcons">
-
-          <a href=""
-            ><img class="logoIkea" src="IMG/Ikea_logo 2.svg" alt="Logo IKEA"
-          /></a>
-
-          <div>
-            <a href=""
-              ><img class="iconCaddy" src="IMG/Group.svg" alt="Panier"
-            /></a>
-          </div>
-
-        </nav>
-      </header>
-
-      <section class="sectionPresentation">
-          <h1 class="nameProduct">Mångsidig</h1>
-        <div class="imgProjet"><img class="figmaProjet" src="Assets/shelf icon 2.png" alt="">
+<body>
+  <main>
+    <header>
+      <nav class="navBar">
+        <div id="Menu" class="hiddenMenu">
+          <ul>
+            <li class="titreMenuHidden">Menu</li>
+            <hr>
+            <li><button class="effetLi">A propos</button></li>
+            <li><button class="effetLi">Produit</button></li>
+            <li><button class="effetLi">Contact</button></li>
+          </ul>
         </div>
-        <article class="articlePresentation">
-          
 
-        </article>
-      </section>
+        <div class="menuBurger">
+          <span></span>
+        </div class="blocIcons">
 
-      <!-- zone de customisation -->
-      <section class="sectionCustomisation" >
-          <h1 class="sellNow">Achetez-le maintenant !</h1>
+        <a href=""><img class="logoIkea" src="IMG/Ikea_logo 2.svg" alt="Logo IKEA" /></a>
 
-        <article class="articleCustomisation">
+        <div>
+          <a href=""><img class="iconCaddy" src="IMG/Group.svg" alt="Panier" /></a>
+        </div>
 
-        </article>
-        <article class="descriptionArea"> 
-          <h1 class="nameProduct">Mångsidig</h1><span class="priceProduct"><p>à partir de <strong>999,99€</strong></p></span>
-          <h1 class="styleh1">Qu'est-ce que c'est ? </h1>
-          <p class="descriptionProduct">Etagère modulable à lévitation conçu pour l’intérieur, sur lequel on peut ajouter ou stocker à sa guise rangements, décorations en tout genre et utilitaires comme une lumière en fonction des besoins de l’utilisateur. Les modules sont interchangeable a la guise de l’utilisateur tant qu’il utilise les modules IKEA spécialement conçus pour ce meuble.</p>
+      </nav>
+    </header>
+
+    <section class="sectionPresentation">
+      <h1 class="nameProduct">Mångsidig</h1>
+      <div class="imgProjet"><img class="figmaProjet" src="Assets/shelf icon 2.png" alt="">
+      </div>
+      <article class="articlePresentation">
+
+
+      </article>
+    </section>
+
+    <!-- zone de customisation -->
+    <section class="sectionCustomisation">
+      <h1 class="sellNow">Achetez-le maintenant !</h1>
+
+      <article class="articleCustomisation">
+
+      </article>
+      <article class="descriptionArea">
+        <h1 class="nameProduct">Mångsidig</h1><span class="priceProduct">
+          <p>à partir de <strong>999,99€</strong></p>
+        </span>
+        <h1 class="styleh1">Qu'est-ce que c'est ? </h1>
+        <p class="descriptionProduct">Etagère modulable à lévitation conçu pour l’intérieur, sur lequel on peut ajouter
+          ou stocker à sa guise rangements, décorations en tout genre et utilitaires comme une lumière en fonction des
+          besoins de l’utilisateur. Les modules sont interchangeable a la guise de l’utilisateur tant qu’il utilise les
+          modules IKEA spécialement conçus pour ce meuble.</p>
         <article class="formulary">
-            
-            <form>
-              <span>
-                <h1>A vous !</h1>
-                <label for="quantity">Quantité :</label>
-                <select name="quantity" id="quantity" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-              </span>
-              </br>
-              <span>
-                <label for="color">Couleur :</label required>
-                <select name="color" id="color" placeholder="votre quantité">
-                    <option value="color">Blanc</option>
-                    <option value="color">Noir</option>
-                    <option value="color">Marron</option>
-                </select>
-              </span>
+
+          <form>
+            <span>
+              <h1>A vous !</h1>
+              <label for="quantity">Quantité :</label>
+              <select name="quantity" id="quantity" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </span>
+            </br>
+            <span>
+              <label for="color">Couleur :</label required>
+              <select name="color" id="color" placeholder="votre quantité">
+                <option value="color">Blanc</option>
+                <option value="color">Noir</option>
+                <option value="color">Marron</option>
+              </select>
+            </span>
             </br>
             <span>
               <label for="mobule">Module :</label required>
               <select name="mobule" id="module">
-                  <option value="module">4</option>
-                  <option value="module">8</option>
-                  <option value="module">12</option>
+                <option value="module">4</option>
+                <option value="module">8</option>
+                <option value="module">12</option>
               </select>
             </span>
-            <div>              
-                <input class="btn-validation" type="submit" value="C'est parti !" />
+            <div class="button_validation">
+              <input class="btn-validation" type="submit" value="C'est parti !" />
             </div>
-            </form>
-          </article class="descriptionH1">
-       </article>
-      </section>
+          </form>
+        </article class="descriptionH1">
+      </article>
+    </section>
 
     <!-- DESCRIPTION SUR LE SYSTÈME DE LEVITATION UTILISÉ -->
     <div class="sectionSystemeLevitation">
-      
+
       <article class="articleSystemeLevitation1"></article>
       <h1 class="titreArticle">PLACEHOLDER</h1>
       <br>
-      <p> <h3 class="soustitreArticle"> SOUS-TITRE </h3>  Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>
+        <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
       <div class="bouton1">
         <button class="buttonArticle">Lire</button>
       </div>
 
       <hr>
-      
+
       <article class="articleSystemeLevitation2"></article>
       <h1 class="titreArticle">PLACEHOLDER</h1>
-      <p> <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>
+        <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
       <div class="bouton2"> <button class="buttonArticle">Lire</button>
       </div>
 
-      <hr >
-      
+      <hr>
+
       <article class="articleSystemeLevitation3"></article>
       <h1 class="titreArticle">PLACEHOLDER</h1>
-      <p> <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>
+        <h3 class="soustitreArticle"> SOUS-TITRE </h3> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
       <div class="bouton3">
         <button class="buttonArticle">Lire</button>
       </div>
