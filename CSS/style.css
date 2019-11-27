@@ -5,7 +5,28 @@ body {
   min-height: 100vh;
 }
 
-/* le header entier */
+/* PHONE */
+
+@media (max-width: 768px) {
+  .menuBurger {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  cursor: pointer;
+  }
+}
+
+
+/* COMPUTER */
+
+@media (min-width: 769px) and (min-height: 751px) {
+  .menuBurger {
+    visibility: hidden;
+  }
+
+}
+
+/* HEADER */
 .navBar {
   display: flex;
   flex-direction: row;
@@ -16,14 +37,7 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* le menu burger en entier + animation de sortie X */
-
-.menuBurger {
-  position: relative;
-  width: 30px;
-  height: 4px;
-  cursor: pointer;
-}
+/* MENU BURGER AND ANIMATION */
 
 .menuBurger span {
   width: 100%;
@@ -72,7 +86,7 @@ body {
 
 /*-----------------------------------*/
 
-/* la partie cachée du menu burger */
+/* MENU BURGER HIDDEN PART */
 .hiddenMenu {
   display: flex;
   position: fixed;
@@ -95,7 +109,7 @@ body {
   transform: none;
 }
 
-/* titre "menu" du menu burger */
+/* TITLE "MENU" MENU BURGER */
 
 .titreMenuHidden {
   text-transform: uppercase;
@@ -213,7 +227,7 @@ li {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
-/* nom prix et description de la section présentation */
+/* NAME PRICE AND DESCRIPTION SECTION PRESENTATION */
 .nameProduct {
   text-transform: uppercase;
   font-weight: 700;
@@ -302,13 +316,13 @@ footer {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* classe qui cible chaque logo de reseaux svg */
+/* CLASS TARGET LOGO SVG */
 .reseauxIcons {
   width: 20px;
   color: #ffce00;
 }
 
-/* la div comprenant l'ensemble des logos de reseaux svg */
+/* DIV LOGO RESEAUX SOCIAUX SVG */
 .reseauxSociaux {
   width: 100%;
   display: flex;
