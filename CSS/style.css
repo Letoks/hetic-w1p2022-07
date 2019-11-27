@@ -16,7 +16,7 @@ body {
     cursor: pointer;
   }
 
- 
+
 
 }
 
@@ -153,16 +153,20 @@ li {
 }
 
 @keyframes jelly {
+
   0%,
   100% {
     transform: scale(1, 1);
   }
+
   25% {
     transform: scale(0.9, 1.1);
   }
+
   50% {
     transform: scale(1.1, 0.9);
   }
+
   75% {
     transform: scale(0.95, 1.05);
   }
@@ -190,16 +194,20 @@ li {
 }
 
 @keyframes jelly {
+
   0%,
   100% {
     transform: scale(1, 1);
   }
+
   25% {
     transform: scale(0.9, 1.1);
   }
+
   50% {
     transform: scale(1.1, 0.9);
   }
+
   75% {
     transform: scale(0.95, 1.05);
   }
@@ -286,6 +294,7 @@ li {
   color: white;
   text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
 }
+
 .priceProduct {
   font-weight: 500;
   text-align: right;
@@ -300,6 +309,9 @@ li {
 
 .formulary h1 {
   font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
   margin: 10px 0 20px 0;
   color: black;
   text-transform: uppercase;
@@ -321,44 +333,50 @@ li {
   color: white;
   text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
   line-height: 20px;
-  
+
 }
 
 /* FORMULAIRE */
 
 .formulary form {
   background-color: white;
-  padding: 5%;
   border-radius: 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   margin: 20px auto;
-  width: 100%;
-  max-width: 300px;
+  max-width: 3000px;
 }
 
 select {
+  display: flex;
+  justify-content: center;
   background-color: white;
-  width: 100%;
+  width: 80%;
   height: 30px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
-  margin: 5px;
+  margin-top: 5px;
+  margin-left: 10%;
   outline: none;
-
 }
 
 
 .formulary label {
+  display: flex;
   color: black;
   font-weight: 400;
   font-size: 15px;
-  margin-top: 30px ;
-
-
+  margin-left: 10%;
 }
 
 .formulary span {
   border: 1px black;
 }
+
+.button_validation {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
 .btn-validation {
   display: flex;
   min-width: 25px;
@@ -372,7 +390,7 @@ select {
 
 }
 
- .btn-validation:hover {
+.btn-validation:hover {
   color: #0058a3;
 }
 
@@ -389,7 +407,9 @@ select {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-.bouton1, .bouton2, .bouton3{
+.bouton1,
+.bouton2,
+.bouton3 {
   display: flex;
   justify-content: center;
 }
@@ -497,6 +517,7 @@ select {
   color: black;
   text-align: left;
   text-shadow: none;
+
 }
 
 
