@@ -92,31 +92,7 @@ li {
     border-bottom: 1px black;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #0058a3;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-}
-
-/* classe qui cible chaque logo de reseaux svg */
-.reseauxIcons {
-  width: 30px;
-
-}
-
-/* la div comprenant l'ensemble des logos de reseaux svg */
-.reseauxSociaux {
-    position: absolute;
-    bottom: 17.5%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+/* MA PARTIE À MOAAAAAAAAAAAAAA */
 
 h1 {
     font-size: 30px;
@@ -131,12 +107,54 @@ form {
     display: inline-block;
 }
 
-div.form div{
-    margin-bottom: 5%;
+small {
+    font-size: 10px;
+    color: red;
 }
 
-div.form p {
-    font-size: 30px;
-    text-align:center;
-    
+input.submit {
+    background: #1266ff;
+    border: none;
+    border-bottom: 3px solid darken(#1266ff, 15%);
+    color: #fff;
+    display: inline-block;
+    padding: 8px;
+    vertical-align: bottom;
+    width: 50%;
+}
+
+input.submit:hover {
+    background: #4c8aff;
+}
+
+input.submit:active {
+    background: #c9dcff;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+div.mgBot {
+    margin-bottom: 5px;
+}
+
+div.mgTop {
+    margin-top: 5px;
+}
+
+small {
+    visibility: hidden;
+}
+
+small.error {
+    visibility: initial;
+}
+
+small.country {
+    visibility: initial;
 }
