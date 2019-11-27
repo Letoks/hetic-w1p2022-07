@@ -430,7 +430,8 @@ footer {
 /* CLASS TARGET LOGO SVG */
 .reseauxIcons {
   width: 20px;
-  color: #ffce00;
+  height: 20px;
+  fill: white;
 }
 
 /* DIV LOGO RESEAUX SOCIAUX SVG */
