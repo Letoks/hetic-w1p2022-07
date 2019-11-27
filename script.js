@@ -8,3 +8,8 @@ menu.addEventListener('click', function() {
 });
 
 
+const menuBurger = document.querySelector('.menuBurger');
+
+menuBurger.addEventListener('click', function() {
+  menuBurger.classList.toggle('active');
+})
