@@ -15,9 +15,6 @@ body {
     height: 4px;
     cursor: pointer;
   }
-
- 
-
 }
 
 /* COMPUTER */
@@ -26,7 +23,6 @@ body {
   .menuBurger {
     visibility: hidden;
   }
-
 }
 
 /* HEADER */
@@ -94,7 +90,7 @@ body {
 .hiddenMenu {
   display: flex;
   position: fixed;
-  background-color: #0058A3;
+  background-color: #0058a3;
   width: 100%;
   height: 100%;
   /* padding: 15px; */
@@ -182,6 +178,7 @@ li {
   z-index: 1;
   margin: 21px 21px;
   width: 30px;
+  fill: #ffce00;
 }
 
 .iconCaddy:active {
@@ -310,7 +307,6 @@ li {
   margin: 30px 0 0 0;
   color: white;
   text-transform: uppercase;
-
 }
 
 .descriptionProduct {
@@ -321,7 +317,6 @@ li {
   color: white;
   text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
   line-height: 20px;
-  
 }
 
 /* FORMULAIRE */
@@ -343,17 +338,13 @@ select {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
   margin: 5px;
   outline: none;
-
 }
-
 
 .formulary label {
   color: black;
   font-weight: 400;
   font-size: 15px;
-  margin-top: 30px ;
-
-
+  margin-top: 30px;
 }
 
 .formulary span {
@@ -369,18 +360,13 @@ select {
   border-radius: 10px;
   cursor: pointer;
   outline: none;
-
 }
 
- .btn-validation:hover {
+.btn-validation:hover {
   color: #0058a3;
 }
 
-
-
-
 /*-----------------------------------*/
-
 
 /* DESCRIPTION SUR LE SYSTÈME DE LEVITATION UTILISÉ */
 
@@ -389,12 +375,12 @@ select {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-.bouton1, .bouton2, .bouton3{
+.bouton1,
+.bouton2,
+.bouton3 {
   display: flex;
   justify-content: center;
 }
-
-
 
 .articleSystemeLevitation1 {
   background-color: #0058a3;
@@ -433,17 +419,14 @@ select {
 }
 
 .titreArticle {
-  font-size: 20px ;
+  font-size: 20px;
 }
-
-
 
 .buttonArticle {
   height: 20px;
   width: 60px;
   display: flex;
   justify-content: center;
-
 }
 
 /* FOOTER  */
