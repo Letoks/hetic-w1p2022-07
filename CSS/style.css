@@ -9,13 +9,12 @@ body {
 
 @media (max-width: 768px) {
   .menuBurger {
-  position: relative;
-  width: 30px;
-  height: 4px;
-  cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 4px;
+    cursor: pointer;
   }
 }
-
 
 /* COMPUTER */
 
@@ -23,7 +22,6 @@ body {
   .menuBurger {
     visibility: hidden;
   }
-
 }
 
 /* HEADER */
@@ -319,7 +317,8 @@ footer {
 /* CLASS TARGET LOGO SVG */
 .reseauxIcons {
   width: 20px;
-  color: #ffce00;
+  height: 20px;
+  fill: white;
 }
 
 /* DIV LOGO RESEAUX SOCIAUX SVG */
