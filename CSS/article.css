@@ -235,7 +235,7 @@ li {
   display: flex;
   justify-content: center;
   margin: 10% auto;
-  margin-top: 70px;
+  margin-top: auto;
   padding: 10px;
   width: 70%;
   height: auto;
@@ -258,18 +258,26 @@ li {
   justify-content: center;
   text-decoration: underline;
   text-decoration-color: #ffce00;
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-
-.titreArticle {
-  font-size: 20px;
-  margin: 10px 0;
   color: black;
   text-align: left;
   text-shadow: none;
+}
+
+.divImgArticle1, .divImgArticle2, .divImgArticle3 {
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.imgArticle1 {
+  width: 50%;
+}
+
+.imgArticle2, .imgArticle3 {
+  width: 70%;
 }
 
 .soustitreArticle {
@@ -297,8 +305,6 @@ li {
 
 footer {
   display: flex;
-  position: absolute;
-  bottom: 0;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -400,7 +406,7 @@ footer {
     margin: 10px 30px;
   }
 
-  .list-menu {
+  .listMenu {
     display: flex;
   }
 
@@ -409,13 +415,31 @@ footer {
   }
 
   .logoIkea {
-    width: 130px;
-    height: 60px;
-    margin: 5px;
+    width: 160px;
+    height: 70px;
+    margin: 10px;
+    order: -1;
   }
 
   .sellNow {
     font-size: 3vw;
     margin-bottom: 100px;
   }
+
+  .titreArticle{
+  font-size: 25px;
+  }
+
+  .imgArticle1{
+    width: 25%;
+  }
+
+  .imgArticle2{
+    width: 60%;
+  }
+
+  .imgArticle3{
+    width: 50%;
+  }
+
 }
