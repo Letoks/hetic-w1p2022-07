@@ -320,10 +320,9 @@ li {
 }
 
 select {
-  display: flex;
   justify-content: center;
   background-color: white;
-  width: 80%;
+  width: 70%;
   height: 30px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
   margin-top: 5px;
@@ -332,15 +331,15 @@ select {
 }
 
 .formulary label {
-  display: flex;
   color: black;
   font-weight: 400;
   font-size: 15px;
   margin-left: 10%;
 }
 
-.formulary span {
-  border: 1px black;
+#prixf {
+  font-weight: 500;
+  margin-left: 50%;
 }
 
 .button_validation {
