@@ -65,3 +65,9 @@ select4.addEventListener('change', function(event) {
   result4.innerHTML = value * 130;
   prixf.innerHTML = parseInt(select1.value) * 8 + parseInt(select2.value) * 12 + parseInt(select3.value) * 100 + parseInt(select4.value) * 130 + "€";
 });
+
+goBtn = document.querySelector('div.validation_button');
+
+goBtn.addEventListener('onclick', function() {
+  window.location.href("product.html");
+});

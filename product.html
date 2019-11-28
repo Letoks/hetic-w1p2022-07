@@ -196,6 +196,35 @@
             </select> 
             <div><small class="cbNum">Entrez une date d'expiration.</small></div>
           </div>
+
+          <div class="mgTop mgBot">
+            <label for="text">Code de sécurité</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="code"
+              name="code"
+              placeholder="XXX"
+              pattern="[0-9]{3}"
+              required
+            />
+          </div>
+          <div><small class="tel">Entrez un code de sécurité.</small></div>
+
+          <div class="mgBot name"><label for="name">Nom du titulaire</label></div>
+        <div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Anthony Roux"
+            pattern="[A-Za-zÀ-ÿ -]{2,256}"
+            required
+          />
+        </div>
+        <div><small class="name">Entrez un nom.</small></div>
+
         
         <div class="mgTop">
           <input type="submit" class="submit" value="Payer" />

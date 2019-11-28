@@ -349,20 +349,23 @@ select {
   margin-top: 15px;
 }
 
-.btn-validation {
-  display: flex;
-  min-width: 35px;
-  font-size: 10px;
-  margin: 3% 33%;
-  box-shadow: -1px 148px 400px -62px rgba(255, 255, 255, 0.993) inset;
-  cursor: pointer;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
+input.btn-validation {
+  background: #1266ff;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  width: 32vw;
+  border-radius: 5px;
 }
 
-.btn-validation:hover {
-  color: #0058a3;
+input.btn-validation:hover {
+  background: #4c8aff;
+}
+
+input.btn-validation:active {
+  background: #c9dcff;
 }
 
 /*-----------------------------------*/
