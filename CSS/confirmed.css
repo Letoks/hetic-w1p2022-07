@@ -1,0 +1,8 @@
+svg.clear {
+    display: block;
+    height: 200px;
+    width: 200px;
+    fill: green;
+    margin-left: auto;
+    margin-right: auto;
+}
