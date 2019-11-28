@@ -1,7 +1,7 @@
-@font-face{
+@font-face {
   font-family: "Noto Sans HK";
-  src: url("./fonts/noto-sans-hk-v5-latin-regular.woff") format("woff"), 
-       url("./fonts/noto-sans-hk-v5-latin-regular.woff2") format("woff2");
+  src: url("./fonts/noto-sans-hk-v5-latin-regular.woff") format("woff"),
+    url("./fonts/noto-sans-hk-v5-latin-regular.woff2") format("woff2");
 }
 
 body {
@@ -26,14 +26,21 @@ body {
 
 /* MENU BURGER AND ANIMATION */
 
+.menuBurger {
+  width: 70px;
+  height: 70px;
+  position: static;
+  order: -1;
+}
+
 .menuBurger span {
   width: 100%;
   height: 4px;
-  margin: 32px 20px;
+  margin: 22px 20px;
   background-color: #ffce00;
   border-radius: 10px;
   display: block;
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   transition: background-color 0.3s ease-in-out;
@@ -83,7 +90,7 @@ body {
   margin-top: 60px;
   justify-content: center;
   transition: transform 0.5s;
-  transform: translateX(-1500px);
+  transform: translateX(-2500px);
 }
 
 .hiddenMenu.isOpen {
@@ -135,6 +142,7 @@ li {
 }
 
 @keyframes jelly {
+
   0%,
   100% {
     transform: scale(1, 1);
@@ -158,7 +166,7 @@ li {
 .logoIkea {
   width: 130px;
   height: 60px;
-  margin: 5px 20%;
+  margin: 10px 0;
 }
 
 /* ANIMATION JELLY SUR LE PANIER */
@@ -176,6 +184,7 @@ li {
 }
 
 @keyframes jelly {
+
   0%,
   100% {
     transform: scale(1, 1);
@@ -219,55 +228,8 @@ li {
   line-height: 30px;
 }
 
-.articleSystemeLevitation1 {
-  background-color: #0058a3;
-  display: flex;
-  justify-content: center;
-  margin: 10% auto;
-  margin-top: 70px;
-  padding: 10px;
-  width: auto;
-  height: auto;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-}
-
-.article1 {
-  padding: 10px;
-  text-align: justify;
-  font-weight: 300;
-  color: white;
-  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
-  line-height: 20px;
-}
-
-.titreArticle {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.articleSystemeLevitation2 {
-  background-color: #0058a3;
-  display: flex;
-  justify-content: center;
-  margin: 10% auto;
-  margin-top: 70px;
-  padding: 10px;
-  width: auto;
-  height: auto;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-}
-
-.article2 {
-  padding: 10px;
-  text-align: justify;
-  font-weight: 300;
-  color: white;
-  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
-  line-height: 20px;
-}
-
+.articleSystemeLevitation1,
+.articleSystemeLevitation2,
 .articleSystemeLevitation3 {
   background-color: #0058a3;
   display: flex;
@@ -275,20 +237,32 @@ li {
   margin: 10% auto;
   margin-top: 70px;
   padding: 10px;
-  width: auto;
+  width: 70%;
   height: auto;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
 
+.article1,
+.article2,
 .article3 {
   padding: 10px;
-  text-align: justify;
   font-weight: 300;
   color: white;
   text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
   line-height: 20px;
 }
+
+.titreArticle {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #ffce00;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 
 .titreArticle {
   font-size: 20px;
@@ -323,6 +297,8 @@ li {
 
 footer {
   display: flex;
+  position: absolute;
+  bottom: 0;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -337,17 +313,41 @@ footer {
   width: 20px;
   height: 20px;
   fill: white;
+  padding: 10px;
+}
+
+/* NEWSLETTER */
+
+.newsletterForm {
+  height: fit-content;
+  width: fit-content;
+  margin: auto 2%;
+}
+
+.newsletter {
+  color: #ffce00;
+}
+
+.newsletterInput {
+  width: 70%;
+  border-radius: 4px;
+}
+
+.buttonOk {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 2px;
+  border: none;
 }
 
 /* DIV LOGO RESEAUX SOCIAUX SVG */
 .reseauxSociaux {
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
-
 
 @media (max-width: 1023px) {
   .menuBurger span {
@@ -355,11 +355,6 @@ footer {
     width: 30px;
     position: absolute;
     left: 20px;
-  }
-
-  .logoIkea {
-    position: absolute;
-    left: 25%;
   }
 }
 
@@ -416,7 +411,7 @@ footer {
   .logoIkea {
     width: 130px;
     height: 60px;
-    margin: 5px ;
+    margin: 5px;
   }
 
   .sellNow {
