@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Noto Sans HK';
+  src: url(/hetic-w1p2022-07/font/NotoSansHk-Regular);
+}
+
 /* REGLES GENERALES  */
 body {
   font-family: Noto Sans HK;
@@ -162,6 +167,7 @@ li {
   z-index: 1;
   margin: 21px 21px;
   width: 30px;
+  fill: #ffce00;
 }
 
 .iconCaddy:active {
@@ -538,7 +544,7 @@ footer {
   .menuBurger {
     visibility: hidden;
   }
-
+}
   /* MENU BURGER HIDDEN PART */
   .hiddenMenu {
     position: static;
@@ -586,11 +592,10 @@ footer {
   .logoIkea {
     width: 130px;
     height: 60px;
-    margin: 5px %;
+    margin: 5px ;
   }
 
   .sellNow {
     font-size: 3vw;
     margin-bottom: 100px;
   }
-}
