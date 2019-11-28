@@ -34,6 +34,12 @@ propos.addEventListener('click', function () {
 })
 
 
+contact = document.querySelector('.contact')
+
+contact.addEventListener('click', function() {
+  hiddenMenu.classList.toggle('isOpen');
+})
+
 
 
 // Customisation //
