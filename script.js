@@ -32,6 +32,14 @@ propos.addEventListener('click', function() {
   menuBurger.classList.toggle('active');
 })
 
+accueil = document.querySelector('.accueil')
+
+accueil.addEventListener('click', function() {
+  hiddenMenu.classList.toggle('isOpen');
+})
+
+
+
 // Customisation //
 
 const select1 = document.getElementById('select1');

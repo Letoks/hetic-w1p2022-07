@@ -21,10 +21,17 @@ body {
 
 /* MENU BURGER AND ANIMATION */
 
+.menuBurger {
+  width: 70px;
+  height: 70px;
+  position: static;
+  order: -1;
+}
+
 .menuBurger span {
   width: 100%;
   height: 4px;
-  margin: 32px 20px;
+  margin: 22px 20px;
   background-color: #ffce00;
   border-radius: 10px;
   display: block;
@@ -78,7 +85,7 @@ body {
   margin-top: 60px;
   justify-content: center;
   transition: transform 0.5s;
-  transform: translateX(-1500px);
+  transform: translateX(-2500px);
 }
 
 .hiddenMenu.isOpen {
@@ -153,7 +160,7 @@ li {
 .logoIkea {
   width: 130px;
   height: 60px;
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 /* ANIMATION JELLY SUR LE PANIER */
@@ -527,10 +534,6 @@ footer {
     position: absolute;
     left: 20px;
   }
-
-  .logoIkea {
-
-  }
 }
 
 /* COMPUTER */
@@ -589,8 +592,6 @@ footer {
     height: 70px;
     margin: 10px;
     order: -1;
-
-
   }
 
   .sellNow {
