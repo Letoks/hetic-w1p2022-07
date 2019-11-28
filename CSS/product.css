@@ -38,6 +38,8 @@ input.submit {
   padding: 8px;
   font-weight: bold;
   width: 32vw;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 input.submit:hover {

@@ -2,7 +2,8 @@
 
 @font-face{
   font-family: "Noto Sans HK";
-  src: url(/fonts/notosanshk-regular.woff) format(woff),  url(/fonts/notosanshk-regualar.woff2) format(woff2);
+  src: url("./fonts/noto-sans-hk-v5-latin-regular.woff") format("woff"), 
+       url("./fonts/noto-sans-hk-v5-latin-regular.woff2") format("woff2");
 }
 
 body {
@@ -233,12 +234,16 @@ li {
 }
 
 /* NAME PRICE AND DESCRIPTION SECTION PRESENTATION */
+
+
 .nameProduct {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 8vw;
   margin: 30px 0 10px 0;
+  margin-top: 150px;
   text-align: center;
+  color: #0057a3d8;
 }
 
 /* ZONE DE CUSTOMISATION  */
@@ -369,20 +374,24 @@ select {
   margin-top: 15px;
 }
 
-.btn-validation {
-  display: flex;
-  min-width: 35px;
-  font-size: 10px;
-  margin: 3% 33%;
-  box-shadow: -1px 148px 400px -62px rgba(255, 255, 255, 0.993) inset;
-  cursor: pointer;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
+input.btn-validation {
+  background: #1266ff;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  width: 32vw;
+  border-radius: 5px;
+  margin: auto;
 }
 
-.btn-validation:hover {
-  color: #0058a3;
+input.btn-validation:hover {
+  background: #4c8aff;
+}
+
+input.btn-validation:active {
+  background: #c9dcff;
 }
 
 /*-----------------------------------*/
@@ -628,5 +637,13 @@ footer {
 
   .nameProduct {
     font-size: 5vw;
+  margin: 0;
+  }
+
+  .yellowOnblue {
+
+    margin-top: 12%;
+    
+  
   }
 }

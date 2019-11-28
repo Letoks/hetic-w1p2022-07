@@ -9,7 +9,7 @@ submit.addEventListener("click", function() {
     }
   });
 
-  if (test == 9) {
+  if (test == 11) {
     window.location.assign("confirmed.html");
   }
 });
