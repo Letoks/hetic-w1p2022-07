@@ -1,6 +1,12 @@
 /* REGLES GENERALES  */
+
+@font-face{
+  font-family: "Noto Sans HK";
+  src: url(/fonts/notosanshk-regular.woff) format(woff),  url(/fonts/notosanshk-regualar.woff2) format(woff2);
+}
+
 body {
-  font-family: Noto Sans HK;
+  font-family: "Noto Sans HK";
   width: 100vw;
   min-height: 100vh;
   margin-top: 120px;
@@ -169,6 +175,7 @@ li {
   z-index: 1;
   margin: 21px 21px;
   width: 30px;
+  fill: #ffce00;
 }
 
 .iconCaddy:active {
@@ -402,7 +409,7 @@ select {
   display: flex;
   justify-content: center;
   margin: 80px auto 20px;
-  /* margin-top: 70px; */
+  margin-top: 70px;
   padding: 10px;
   width: auto;
   height: auto;
@@ -410,18 +417,11 @@ select {
   border-radius: 5px;
 }
 
-.article1 {
-  padding: 10px;
-  text-align: justify;
-  font-weight: 300;
-  color: white;
-  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
-  line-height: 20px;
-}
 
 .titreArticle {
   text-transform: uppercase;
   font-weight: 700;
+
 }
 
 .articleSystemeLevitation2 {
@@ -429,7 +429,7 @@ select {
   display: flex;
   justify-content: center;
   margin: 80px auto 20px;
-  /* margin-top: 70px; */
+  margin-top: 70px;
   padding: 10px;
   width: auto;
   height: auto;
@@ -437,9 +437,10 @@ select {
   border-radius: 5px;
 }
 
-.article2 {
+.article1, .article2, .article3 {
+  text-transform: uppercase;
   padding: 10px;
-  text-align: justify;
+  text-align: center;
   font-weight: 300;
   color: white;
   text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
@@ -451,7 +452,7 @@ select {
   display: flex;
   justify-content: center;
   margin: 80px auto 20px;
-  /* margin-top: 50px; */
+  margin-top: 70px;
   padding: 10px;
   width: auto;
   height: auto;
@@ -459,18 +460,10 @@ select {
   border-radius: 5px;
 }
 
-.article3 {
-  padding: 10px;
-  text-align: justify;
-  font-weight: 300;
-  color: white;
-  text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.55);
-  line-height: 20px;
-}
-
 .titreArticle {
   font-size: 20px;
-  margin: 10px 0;
+  margin-top: 30px;
+  margin-bottom: -40px;
   color: black;
   text-align: left;
   text-shadow: none;
@@ -491,10 +484,13 @@ select {
 }
 
 .buttonArticle {
-  height: 20px;
-  width: 60px;
+  height: fit-content;
+  width: fit-content;
   display: flex;
-  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #0058a3 ;
+  color: #ffce00;
 }
 
 /* FOOTER  */
@@ -504,7 +500,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 70px;
   background-color: #0058a3;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
@@ -514,15 +510,40 @@ footer {
   width: 20px;
   height: 20px;
   fill: white;
+  padding: 10px;
+}
+
+/* NEWSLETTER */
+
+.newsletterForm{
+  height: fit-content;
+  width: fit-content;
+  margin: auto 2% ;
+}
+
+.newsletter {
+  color: #ffce00;
+}
+
+.newsletterInput{
+  width: 70%;
+  border-radius: 4px;
+}
+
+.buttonOk{
+  height: fit-content;
+  width: fit-content;
+  border-radius: 2px;
+  border: none;
 }
 
 /* DIV LOGO RESEAUX SOCIAUX SVG */
 .reseauxSociaux {
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
 
 /* TABLET */
@@ -566,7 +587,6 @@ footer {
     flex-direction: row;
     padding: 0;
     margin: 10px 30px;
-    /* text-align: center; */
     font-size: 20px;
   }
 
@@ -579,7 +599,7 @@ footer {
     margin: 10px 30px;
   }
 
-  ul {
+  .list-menu {
     display: flex;
   }
 
@@ -588,6 +608,7 @@ footer {
   }
 
   .logoIkea {
+
     width: 160px;
     height: 70px;
     margin: 10px;

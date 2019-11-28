@@ -1,20 +1,13 @@
-/* PHONE */
-
-@media (max-width: 768px) {
-  .menuBurger {
-    position: relative;
-    width: 30px;
-    height: 4px;
-    cursor: pointer;
-  }
+@font-face{
+  font-family: "Noto Sans HK";
+  src: url(./fonts/notosanshk-regular-webfont.woff) format(woff), url(./fonts/notosanshk-regular-webfont.woff2) format(woff2);
 }
 
-/* COMPUTER */
-
-@media (min-width: 769px) and (min-height: 751px) {
-  .menuBurger {
-    visibility: hidden;
-  }
+body {
+  font-family: "Noto Sans HK";
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 120px;
 }
 
 /* HEADER */
@@ -173,6 +166,7 @@ li {
   z-index: 1;
   margin: 21px 21px;
   width: 30px;
+  fill: #ffce00;
 }
 
 .iconCaddy:active {
@@ -351,4 +345,81 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+
+@media (max-width: 1023px) {
+  .menuBurger span {
+    margin: 0;
+    width: 30px;
+    position: absolute;
+    left: 20px;
+  }
+
+  .logoIkea {
+    position: absolute;
+    left: 25%;
+  }
+}
+
+/* COMPUTER */
+
+@media (min-width: 1024px) and (min-height: 751px) {
+  .menuBurger {
+    visibility: hidden;
+  }
+
+  /* MENU BURGER HIDDEN PART */
+  .hiddenMenu {
+    position: static;
+    background: none;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    transition: none;
+    margin: 0;
+  }
+
+  /* TITLE "MENU" MENU BURGER */
+
+  .titreMenuHidden {
+    display: none;
+  }
+
+  li {
+    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
+    margin: 10px 30px;
+    font-size: 20px;
+  }
+
+  li:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  li:nth-of-type(2) {
+    margin: 10px 30px;
+  }
+
+  .list-menu {
+    display: flex;
+  }
+
+  .laptop-menu {
+    display: none;
+  }
+
+  .logoIkea {
+    width: 130px;
+    height: 60px;
+    margin: 5px ;
+  }
+
+  .sellNow {
+    font-size: 3vw;
+    margin-bottom: 100px;
+  }
 }
