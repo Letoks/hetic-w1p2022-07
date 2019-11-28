@@ -2,7 +2,8 @@
 
 @font-face{
   font-family: "Noto Sans HK";
-  src: url(/fonts/notosanshk-regular.woff) format(woff),  url(/fonts/notosanshk-regualar.woff2) format(woff2);
+  src: url("./fonts/noto-sans-hk-v5-latin-regular.woff") format("woff"), 
+       url("./fonts/noto-sans-hk-v5-latin-regular.woff2") format("woff2");
 }
 
 body {
