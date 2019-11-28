@@ -22,12 +22,14 @@ produit = document.querySelector('.produit')
 
 produit.addEventListener('click', function() {
   hiddenMenu.classList.toggle('isOpen');
+  menuBurger.classList.toggle('active');
 })
 
 propos = document.querySelector('.propos')
 
 propos.addEventListener('click', function() {
   hiddenMenu.classList.toggle('isOpen');
+  menuBurger.classList.toggle('active');
 })
 
 // Customisation //
