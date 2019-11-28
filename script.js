@@ -30,6 +30,14 @@ propos.addEventListener('click', function() {
   hiddenMenu.classList.toggle('isOpen');
 })
 
+accueil = document.querySelector('.accueil')
+
+accueil.addEventListener('click', function() {
+  hiddenMenu.classList.toggle('isOpen');
+})
+
+
+
 // Customisation //
 
 const select1 = document.getElementById('select1');
