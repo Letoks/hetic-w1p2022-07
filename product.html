@@ -10,101 +10,175 @@
       @import url("https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,300,400,500,700,900|Noto+Sans+JP:100,300,400,500,700,900&display=swap");
     </style>
     <script defer type="text/javascript" src="script.js"></script>
+    <script defer type="text/javascript" src="product.js"></script>
 
     <title>Livraison & Paiement</title>
   </head>
 
   <body>
-
     <main>
-      <section>
-        <nav class="navBar">
-          <div id="Menu" class="hiddenMenu">
-            <ul>
-              <li class="titreMenuHidden">Menu</li>
-              <hr>
-              <li>A propos</li>
-              <li>Produits</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div class="menuBurger">
-            <!-- <div class="miniDivBurger"></div>
-            <div class="miniDivBurger"></div>
-            <div class="miniDivBurger"></div> -->
-          </div>
-          <a href=""
-            ><img class="logoIkea" src="IMG/Ikea_logo 2.svg" alt="Logo IKEA"
-          /></a>
-          <div class="blocIcons">
-            <a href=""
-              ><img
-                class="iconCaddy"
-                class="iconsNav"
-                src="IMG/Group.svg"
-                alt="Panier"
-            /></a>
-          </div>
-        </nav>
-      </section>
+      <!-- NEED TO COPY -->
     </main>
 
-    <br>
+    <br />
     <h1>Finalisation de l'achat</h1>
-    <br>
-    <hr>
-    <br>
+    <br />
+    <hr />
+    <br />
 
     <div class="form">
-      <form>  
-          <div><label id="name" class="name" for="name">Nom</label></div>
-          <div><input type="text" id="name" name="name" placeholder="Roux" minlength="2" maxlength="256" required/></div>
+      <form>
+        <div class="mgBot name"><label for="name">Nom</label></div>
+        <div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Roux"
+            pattern="[A-Za-zÀ-ÿ -]{2,256}"
+            required
+          />
+        </div>
+        <div><small class="name">Entrez un nom.</small></div>
 
-          <div><label id="surname" class="surname" for="surname">Prénom</label></div>
-          <div><input type="text" id="surname" name="surname" placeholder="Anthony" maxlength="256" required/></div>
-          
-          <div><label id="country" class="country" for="country">Pays</label></div>
-          <div>
-            <select id="country" name="country">
-              <option value="FR">France</option>
-              <p>Ce produit est uniquement disponible en France.</p>
-            </select>
+        <div class="mgTop mgBot"><label for="surname">Prénom</label></div>
+        <div>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Anthony"
+            pattern="^[A-Za-zÀ-ÿ -]+$"
+            minlength="2"
+            maxlength="256"
+            required
+          />
+        </div>
+        <div><small class="surname">Entrez un prénom.</small></div>
+
+        <div class="mgTop mgBot"><label for="country">Pays</label></div>
+        <div>
+          <select id="country" name="country">
+            <option value="FR">France</option>
+          </select>
+        </div>
+        <div>
+          <small class="visible"
+            >Ce produit est uniquement disponible en France.</small
+          >
+        </div>
+
+        <div class="mgTop mgBot"><label for="address">Adresse</label></div>
+        <div>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="17 rue de la Demi-Lune"
+            pattern="^[A-Za-z0-9À-ÿ '-]+$"
+            minlength="1"
+            maxlength="256"
+            required
+          />
+        </div>
+        <div><small class="address">Entrez une adresse.</small></div>
+
+        <div class="mgTop mgBot"><label for="city">Ville</label></div>
+        <div>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Montreuil"
+            pattern="^[A-Za-zÀ-ÿ '-]+$"
+            minlength="2"
+            maxlength="256"
+            required
+          />
+        </div>
+        <div><small class="city">Entrez une ville.</small></div>
+
+        <div class="mgTop mgBot"><label for="zip">Code postal</label></div>
+        <div>
+          <input
+            type="text"
+            id="zip"
+            name="zip"
+            placeholder="93100"
+            pattern="[0-9]{5}"
+            required
+          />
+        </div>
+        <div><small class="zip">Entrez un code postal.</small></div>
+
+        <div class="mgTop mgBot"><label for="email">Adresse e-mail</label></div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nom@domaine.com"
+            pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+        </div>
+        <div><small class="email">Entrez une adresse e-mail.</small></div>
+
+        <div class="mgTop mgBot">
+          <label for="tel">Numéro de téléphone</label>
+        </div>
+        <div>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="0123456789"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
+        <div><small class="tel">Entrez un numéro de téléphone.</small></div>
+
+        <hr />
+
+        <div class="mgTop mgBot"><label for="country">Payer avec</label></div>
+        <div>
+          <select id="country" name="country">
+            <option value="CB">Carte bancaire</option>
+            <option value="PP" disabled>PayPal</option>
+          </select>
+        </div>
+        <div>
+          <small class="visible"
+            >Seul le paiement par carte bancaire est accepté.</small
+          >
+        </div>
+
+        <div>
+          <div class="mgTop mgBot">
+            <label for="cbNum">Numéro de carte</label>
           </div>
-          <div><label id="address" class="address" for="address">Adresse</label></div>
-          <div><input type="text" id="address" name="address" placeholder="17 rue de la Demi-Lune" minlength="1" maxlength="256" required/></div>
+          <div>
+            <input
+              type="text"
+              id="cbNum"
+              name="cbNum"
+              placeholder="XXXXXXXXXXXXXXXX"
+              pattern="[0-9]{16}"
+              required
+            />
+          </div>
+          <div><small class="cbNum">Entrez un numéro de carte.</small></div>
+        </div>
 
-          <div><label id="city" class="city" for="city">Ville</label></div>
-          <div><input type="text" id="city" name="city" placeholder="Montreuil" minlength="1" maxlength="256" required"/></div>
-
-          <div><label id="zip" class="zip" for="zip">Code postal</label></div>
-          <div><input type="text" id="zip" name="zip" placeholder="93150" pattern="[0-9]{5}" required"/></div>
-          <div><input type="submit" value="Confirmer et payer"/></div>
-
+        <div class="mgTop">
+          <input type="submit" class="submit" value="Payer" />
+        </div>
       </form>
     </div>
-
   </body>
 
-
   <footer>
-  
-      <span class="reseauxSociaux">
-        <a href=""
-            ><img class="reseauxIcons" src="IMG/twitter.svg" alt="twitter"
-          /></a>
-        <a href=""
-            ><img class="reseauxIcons" src="IMG/insta.svg" alt="insta"
-          /></a>
-        <a href=""
-          ><img class="reseauxIcons" src="IMG/pinterest.svg" alt="pinterest"
-        /></a>
-        <a href=""
-          ><img class="reseauxIcons" src="IMG/github.svg" alt="github"
-        /></a>
-        <a href=""
-          ><img class="reseauxIcons" src="IMG/facebook.svg" alt="facebook"
-        /></a>
-      </span>
-  
+    <!-- NEED TO COPY -->
   </footer>
 </html>
