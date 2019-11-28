@@ -341,6 +341,7 @@ li {
 
 select {
   justify-content: center;
+  border-radius: 5px;
   background-color: white;
   width: 70%;
   height: 30px;
@@ -354,12 +355,17 @@ select {
   color: black;
   font-weight: 400;
   font-size: 15px;
+  width: 80%;
   margin-left: 10%;
 }
 
+#prixt {
+  display: inline-flex;
+}
+
 #prixf {
-  font-weight: 500;
-  margin-left: 50%;
+  font-weight: 900;
+  margin-left: -10%;
 }
 
 .button_validation {
