@@ -5,7 +5,7 @@
   fill: green;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 
 h1.congrats {
@@ -20,3 +20,34 @@ h2.congrats {
 .congrats {
   text-align: center;
 }
+
+.button {
+  text-align: center;
+}
+
+input {
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+input.backBtn {
+  background: #1266ff;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  width: 32vw;
+  margin-top: 30px;
+}
+
+input.backBtn:hover {
+  background: #4c8aff;
+}
+
+input.backBtn:active {
+  background: #c9dcff;
+}
+
