@@ -1,8 +1,22 @@
-svg.clear {
-    display: block;
-    height: 200px;
-    width: 200px;
-    fill: green;
-    margin-left: auto;
-    margin-right: auto;
+.svg {
+  display: block;
+  height: 200px;
+  width: 200px;
+  fill: green;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+}
+
+h1.congrats {
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+h2.congrats {
+  font-size: 20px;
+}
+
+.congrats {
+  text-align: center;
 }
