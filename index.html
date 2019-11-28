@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="CSS/reset.css" rel="stylesheet" />
-  <link href="CSS/style.css" rel="stylesheet" />
-  <script defer type="text/javascript" src="script.js"></script>
-  <title>Home page</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="CSS/reset.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>IKEA - Mångsidig</title>
+  </head>
 
-<body>
-  <main>
-    <header>
-      <nav class="navBar">
-        <div class="logoIkea">
-          <a href=""><img src="IMG/Ikea_logo 2.svg" alt="Logo IKEA" /></a>
+  <body>
+    <main>
+      <header>
+        <nav class="navBar">
+          <div class="logoIkea" >            
+            <a href="index.html"
+            ><img src="IMG/Ikea_logo 2.svg" alt="Logo IKEA"
+          /></a>
         </div>
 
         <div id="Menu" class="hiddenMenu">
           <ul class="list-menu">
             <li class="titreMenuHidden">Menu</li>
             <hr class="laptop-menu">
-            <a href="#customisation-area" class="selection">
+             <a  class="accueil">
+              <li>
+                <button class="effetLi accueil">Accueil</button>
+               </li>
+             </a>
+             <a href="#customisation-area" class="selection">
+              <li>
+                <button class="effetLi produit">Produit</button>
+              </li>
+             </a>
+             <a href="#article-area">
+              <li>
+               <button class="effetLi propos">articles</button>
+              </li>
+              </a>
               <li>
                 <button class="effetLi produit">Produit</button>
               </li>
@@ -56,38 +72,17 @@
       <h1 class="nameProduct">Mångsidig</h1>
       <div class="imgProjet"><img class="figmaProjet" src="Assets/shelf icon 2.png" alt="">
 
+
       </div>
       <article class="articlePresentation"></article>
     </section>
-
-
-    <!-- zone de customisation
-      <section class="sectionCustomisation" >
-        <h1 class="sellNow">Achetez-le maintenant !</h1>
-        <article class="articleCustomisation" id="customisation-area">
-        </article>
-        <article class="descriptionArea"> 
-          <h1 class="nameProduct">Mångsidig</h1><span class="priceProduct"><p>à partir de <strong>999,99€</strong></p></span>
-          <h1 class="styleh1">Qu'est-ce que c'est ? </h1>
-          <p class="descriptionProduct">C'est une étagère modulable à lévitation conçu pour l’intérieur, sur lequel on peut ajouter ou stocker à sa guise rangements, décorations en tout genre et utilitaires comme une lumière en fonction des besoins de l’utilisateur. Les modules sont interchangeable tant qu’il utilise les modules IKEA spécialement conçus pour ce meuble.</p>
-
-
-
-    <section class="sectionPresentation">
-      <h1 class="nameProduct">Mångsidig</h1>
-      <div class="imgProjet"><img class="figmaProjet" src="Assets/shelf icon 2.png" alt="">
-      </div>
-      <article class="articlePresentation">
-
-
-      </article>
-    </section> -->
 
     <!-- zone de customisation -->
     <section class="sectionCustomisation" id="customisation-area">
       <h1 class="sellNow">Achetez-le maintenant !</h1>
 
       <article class="articleCustomisation">
+        <img class="brut-project" src="img/design-final.png" alt="">
 
       </article>
       <article class="descriptionArea">
@@ -102,40 +97,72 @@
         <article class="formulary">
 
           <form>
-            <span>
-              <h1>A vous !</h1>
-              <label for="quantity">Quantité :</label>
-              <select name="quantity" id="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+            <h1>Choisissez vos produits</h1>
+        
+            <label for="select1">Planche 25x25 (8€)</label>
+            <select id="select1">
+              <option value="0">Aucun</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <span id="result1">0</span>€
+            <br><br>
+            <label for="select2">Planche 50x25 (12€)</label>
+            <select id="select2">
+              <option value="0">Aucun</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <span id="result2">0</span>€
+            <br><br>
+            <label for="select3">Hauteur 120cm (100€)</label>
+            <select id="select3">
+              <option value="0">Nombre désiré</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span id="result3">0</span>€
+            <br><br>
+            <label for="select3">Hauteur 180cm (130€)</label>
+            <select id="select4">
+              <option value="0">Nombre désiré</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span id="result4">0</span>€
+            <br><br>
+            <label for="select">Couleur</label>
+            <select id="select">
+                <option value="0">Choisissez une couleur</option>
+                <option value="1">Bois</option>
+                <option value="2">Blanc</option>
+                <option value="3">Noir</option>
               </select>
-            </span>
-            </br>
-            <span>
-              <label for="color">Couleur :</label required>
-              <select name="color" id="color" placeholder="votre quantité">
-                <option value="color">Blanc</option>
-                <option value="color">Noir</option>
-                <option value="color">Marron</option>
-              </select>
-            </span>
-            </br>
-            <span>
-              <label for="mobule">Module :</label required>
-              <select name="mobule" id="module">
-                <option value="module">4</option>
-                <option value="module">8</option>
-                <option value="module">12</option>
-              </select>
-            </span>
+              <br><br><br>
+            <label for="prixf">Prix total :</label>
+            <span id="prixf">0€</span>
             <div class="button_validation">
               <input class="btn-validation" type="submit" value="C'est parti !" />
             </div>
