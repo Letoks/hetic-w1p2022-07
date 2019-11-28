@@ -680,6 +680,11 @@ input {
   border-left: none;
 }
 
+div.goButton {
+display: flex;
+justify-content: center;
+}
+
 input.goButton {
   background: #1266ff;
   border: none;
