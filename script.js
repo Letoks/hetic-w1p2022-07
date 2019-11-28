@@ -38,6 +38,12 @@ accueil.addEventListener('click', function() {
   hiddenMenu.classList.toggle('isOpen');
 })
 
+contact = document.querySelector('.contact')
+
+contact.addEventListener('click', function() {
+  hiddenMenu.classList.toggle('isOpen');
+})
+
 
 
 // Customisation //
