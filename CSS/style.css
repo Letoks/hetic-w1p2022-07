@@ -153,7 +153,7 @@ li {
 .logoIkea {
   width: 130px;
   height: 60px;
-  margin: 10px auto;
+  margin: 10px 0
 }
 
 /* ANIMATION JELLY SUR LE PANIER */
@@ -246,13 +246,9 @@ li {
 }
 
 .articleCustomisation {
-  display: flex;
-  justify-content: center;
   margin: 10% auto;
   margin-top: 50px;
-  width: auto;
   max-width: 700px;
-  height: auto;
   background-color: white;
   margin-bottom: 20px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
@@ -260,9 +256,7 @@ li {
 }
 
 .brut-project {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
+  max-width: 100%;
   border-radius: 25px;
 }
 
@@ -536,8 +530,7 @@ footer {
   }
 
   .logoIkea {
-    position: absolute;
-    left: 25%;
+
   }
 }
 
@@ -596,6 +589,9 @@ footer {
     width: 160px;
     height: 70px;
     margin: 10px;
+    order: -1;
+
+
   }
 
   .sellNow {
