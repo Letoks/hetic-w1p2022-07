@@ -83,40 +83,72 @@
         <article class="formulary">
 
           <form>
-            <span>
-              <h1>A vous !</h1>
-              <label for="quantity">Quantité :</label>
-              <select name="quantity" id="quantity" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+            <h1>Choisissez vos produits</h1>
+        
+            <label for="select1">Planche 25x25 (8€)</label>
+            <select id="select1">
+              <option value="0">Aucun</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <span id="result1">0</span>€
+            <br><br>
+            <label for="select2">Planche 50x25 (12€)</label>
+            <select id="select2">
+              <option value="0">Aucun</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <span id="result2">0</span>€
+            <br><br>
+            <label for="select3">Hauteur 120cm (100€)</label>
+            <select id="select3">
+              <option value="0">Nombre désiré</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span id="result3">0</span>€
+            <br><br>
+            <label for="select3">Hauteur 180cm (130€)</label>
+            <select id="select4">
+              <option value="0">Nombre désiré</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <span id="result4">0</span>€
+            <br><br>
+            <label for="select">Couleur</label>
+            <select id="select">
+                <option value="0">Choisissez une couleur</option>
+                <option value="1">Bois</option>
+                <option value="2">Blanc</option>
+                <option value="3">Noir</option>
               </select>
-            </span>
-            </br>
-            <span>
-              <label for="color">Couleur :</label required>
-              <select name="color" id="color" placeholder="votre quantité">
-                <option value="color">Blanc</option>
-                <option value="color">Noir</option>
-                <option value="color">Marron</option>
-              </select>
-            </span>
-            </br>
-            <span>
-              <label for="mobule">Module :</label required>
-              <select name="mobule" id="module">
-                <option value="module">4</option>
-                <option value="module">8</option>
-                <option value="module">12</option>
-              </select>
-            </span>
+              <br><br><br>
+            <label for="prixf">Prix total :</label>
+            <span id="prixf">0€</span>
             <div class="button_validation">
               <input class="btn-validation" type="submit" value="C'est parti !" />
             </div>
