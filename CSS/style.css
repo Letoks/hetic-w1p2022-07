@@ -203,6 +203,25 @@ li {
   }
 }
 
+.redpoint {
+  position: absolute;
+  color: red;
+  text-shadow: -3px 0 red, 0 3px red, 3px 0 red, 0 -3px red;
+  margin-left: 93%;
+  margin-top: -10px;
+  opacity: 0%;
+  transition: 2s;
+}
+
+.redpointon {
+  position: absolute;
+  color: red;
+  text-shadow: -3px 0 red, 0 3px red, 3px 0 red, 0 -3px red;
+  margin-left: 93%;
+  margin-top: -10px;
+  opacity: 100%;
+}
+
 /*-----------------------------------*/
 .sectionPresentation {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
@@ -349,6 +368,7 @@ select {
   margin-top: 5px;
   margin-left: 10%;
   outline: none;
+  margin-bottom: 20px;
 }
 
 .formulary label {
@@ -366,6 +386,33 @@ select {
 #prixf {
   font-weight: 900;
   margin-left: -10%;
+}
+
+.button_validation {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+input.btn-validation {
+  background: #1266ff;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  width: 32vw;
+  border-radius: 5px;
+  margin: auto;
+}
+
+input.btn-validation:hover {
+  background: #4c8aff;
+}
+
+input.btn-validation:active {
+  background: #c9dcff;
 }
 
 /*-----------------------------------*/
